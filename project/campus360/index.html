@@ -32,12 +32,15 @@
     <hr />
 
     <h3>Students</h3>
-    <button ng-click="addStudent()">+</button>
+    </button>
+    <button ng-click="showstudents = !showstudents">
       {{ showstudents ? 'Hide' : 'Show' }}
     </button>
+    
 
     <ul ng-show="showstudents">
       <li ng-repeat="student in students">{{student}}</li>
+
     </ul>
   </body>
 </html>
