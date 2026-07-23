@@ -34,4 +34,5 @@ app.controller("dashboardController", function ($scope) {
 
     alert("student registered successfully!");
   };
+  
 });
