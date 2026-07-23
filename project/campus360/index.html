@@ -189,5 +189,8 @@
     <p>Invalid: {{studentForm.$invalid}}</p>
     <p>Pristine: {{studentForm.$pristine}}</p>
     <p>Dirty: {{studentForm.$dirty}}</p>
+    <p ng-show="studentForm.$touched && studentForm.$invalid" style="color: red;">
+      Please fill in all required fields correctly.
+    </p>
   </body>
 </html>
